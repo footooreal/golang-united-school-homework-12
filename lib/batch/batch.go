@@ -14,7 +14,6 @@ func getOne(id int64) user {
 }
 
 func getBatch(n int64, pool int64) (res []user) {
-	func getBatch(n int64, pool int64) (res []user) {
 	chan_user := make(chan user, n)
 	chan_int := make(chan int, n)
 	arr_user := []user{}
@@ -38,6 +37,4 @@ func getBatch(n int64, pool int64) (res []user) {
 	}
 
 	return arr_user
-}
-
 }
